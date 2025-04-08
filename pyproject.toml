@@ -27,3 +27,15 @@ license-files = ["LICEN[CS]E*"]
 Homepage = "https://github.com/dvcirilo/django-allauth-suap"
 Repository = "https://github.com/dvcirilo/django-allauth-suap"
 Issues = "https://github.com/dvcirilo/django-allauth-suap/issues"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "allauth_suap",
+  "README.md",
+  "LICENSE",
+]
+
+[tool.hatch.build.targets.wheel]
+include = [
+  "allauth_suap",
+]
