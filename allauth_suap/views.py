@@ -23,7 +23,7 @@ class SuapOAuth2Adapter(OAuth2Adapter):
     profile_url = f"{api_url}/rh/eu/"
 
     def complete_login(self, request, app, token, **kwargs):
-        headers = {"Authorization": "Bearer {token.token}"}
+        headers = {"Authorization": f"Bearer {token.token}"}
         resp = (
             get_adapter().get_requests_session().get(self.profile_url, headers=headers)
         )

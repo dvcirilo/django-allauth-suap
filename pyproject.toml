@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "django-allauth-suap"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
   { name="Diego Cirilo", email="dvcirilo@gmail.com" },
 ]
