@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "django-allauth-suap"
+version = "0.1.0"
+authors = [
+  { name="Diego Cirilo", email="dvcirilo@gmail.com" },
+]
+description = "SUAP social login provider for django-allauth"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "Django>=4.2",
+    "django-allauth[socialaccount]",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Framework :: Django",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/dvcirilo/django-allauth-suap"
+Repository = "https://github.com/dvcirilo/django-allauth-suap"
+Issues = "https://github.com/dvcirilo/django-allauth-suap/issues"
